@@ -68,6 +68,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
+                          'ID - ${posts![index].id.toString()}',
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        Text(
                           posts![index].title,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
